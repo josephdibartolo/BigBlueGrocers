@@ -1,4 +1,4 @@
-import App
+@testable import App
 import XCTest
 
 final class AppTests: XCTestCase {
@@ -6,7 +6,7 @@ final class AppTests: XCTestCase {
         // Add your tests here
         XCTAssert(true)
     }
-
+    
     static let allTests = [
         ("testNothing", testNothing)
     ]

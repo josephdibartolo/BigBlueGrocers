@@ -18,3 +18,13 @@
         <img src="http://img.shields.io/badge/swift-5.1-brightgreen.svg" alt="Swift 5.1">
     </a>
 </p>
+
+Currently implements GroceryItems with fields: name [required], size, and comment.
+
+Future goals:
+
+- Implement a "quantity" attribute.
+- Implement a "needed" attribute.
+- Implement filtering into the API.
+- Implement a GraphQL layer.
+  - May be better as a GraphQL BFF layer.

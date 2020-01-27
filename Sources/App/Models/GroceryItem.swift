@@ -7,10 +7,10 @@
 
 import Foundation
 import Vapor
-import FluentSQLite
+import FluentPostgreSQL
 
 struct GroceryItem: Codable, Equatable {
-    var id: Int?
+    var id: UUID?
     let name: String
     let size: String?
     let comment: String?
@@ -33,7 +33,7 @@ struct GroceryItem: Codable, Equatable {
 }
 
 // Allows saving to DB.
-extension GroceryItem: SQLiteModel {}
+extension GroceryItem: PostgreSQLUUIDModel {}
 
 // Creates in-memory DB and writes a GroceryItem table when testing.
 extension GroceryItem: Migration {}
